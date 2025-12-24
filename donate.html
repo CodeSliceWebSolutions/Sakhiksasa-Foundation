@@ -10,16 +10,25 @@
   </head>
   <body>
   <header class="header">
-  <div class="container nav">
-    <img src="assets/images/logo1.png" class="logo">
-    <nav>
-      <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
-      <a href="impact.html">Impact</a>
-      <a href="get-involved.html">Get Involved</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+    <div class="container nav">
+      <img src="assets/images/logo1.png" class="logo">
+
+      <!-- Hamburger Button -->
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        ☰
+      </button>
+
+      <!-- Navigation -->
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="impact.html">Impact</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <div class="donation-container">
 
@@ -141,6 +150,6 @@ document.getElementById('donationForm').addEventListener('submit', function(e) {
     </p>
   </div>
 </footer>
-
+<script src="assets/js/main.js"></script>
 </body>
 </html>
